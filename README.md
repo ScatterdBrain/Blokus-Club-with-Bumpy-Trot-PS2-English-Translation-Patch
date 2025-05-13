@@ -2,6 +2,6 @@
 An English translation project for Irem's PS2 game Blokus Club with Bumpy Trot.
 All of the text was machine translated with minor editing.
 Some work still needed to be done about text on screen position/spacing.
-![WIP1](screenshots/Accepting_the_challenge.png)
-![WIP2](sreenshots/Choosing_Opponents.png)
+![WIP1](screenshots/Accepting_The_Challenge.png)
+![WIP2](screenshots/Choosing_Opponents.png)
 ![WIP3](screenshots/Game_of_Blokus.png)
