@@ -1,0 +1,1 @@
+# Blokus-Club-with-Bumpy-Trot-PS2-English-Translation-Patch
