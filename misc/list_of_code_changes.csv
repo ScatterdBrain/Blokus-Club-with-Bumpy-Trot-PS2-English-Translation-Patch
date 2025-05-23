@@ -1,0 +1,268 @@
+memory_addres;original_instruction;new_instruction;comment
+147AB4;lui v0,0x002C;j 0x002120C0;Jump to VWF function
+147AB8;lw a2,-0x6AA0(v0);nop;
+147ABC;addiu a1,zero,0x2;nop;
+147AC0;lw v1,0x20(a3);nop;
+--------;--------;--------;
+1491E4;sw a0,0x8(v1);nop ;
+1491E8;lw v1,-0x7C18(gp);mthi s5;
+1491EC;sw a1,0xC(v1);j 0x00212080;Jump to the fix for dialogue box character limit
+1491F0;lw v1,-0x7C18(gp);nop ;
+1491F4;sw a2,0x10(v1);nop ;
+1491F8;lw v1,-0x7C18(gp);sw a0,0x8(v1);
+1491FC;jr ra;sw a1,0xC(v1);
+149200;sw a3,0x14(v1);sw a2,0x10(v1);
+149204;nop ;jr ra;
+149208;nop ;sw a3,0x14(v1);
+--------;--------;--------;
+1713D8;addiu v1,zero,0x94;addiu v1,zero,0x90;Move names for 1P, 4P displayed during gameplay
+--------;--------;--------;
+1713F4;lui v1,0x0021;j 0x00211FD0;Jump to the fix for 2P name position during gameplay
+1713F8;lw v1,0x40C8(v1);nop ;
+1713FC;mult v0,v1,v0;nop ;
+--------;--------;--------;
+171410;addiu v1,zero,0x1EC;addiu v1,zero,0x1E8;Move names for 2P, 3P displayed during gameplay
+--------;--------;--------;
+171430;lui v1,0x0021;j 0x00211FD0;Jump to the fix for 3P name position during gameplay
+171434;lw v1,0x40C8(v1);nop ;
+171438;mult v0,v1,v0;nop ;
+--------;--------;--------;
+17144C;addiu v1,zero,0x1EC;addiu v1,zero,0x1E8;Move names for 2P, 3P displayed during gameplay
+--------;--------;--------;
+17146C;addiu v1,zero,0x94;addiu v1,zero,0x90;Move names for 1P, 4P displayed during gameplay
+--------;--------;--------;
+18DC40;addiu v0,v0,0x1A;addiu v0,v0,0x1C;Move words down within buttons in menu
+--------;--------;--------;
+18E668;addiu a0,zero,0x10;addiu a0,zero,0x12;Increse font size for buttons in options menu
+--------;--------;--------;
+18E6AC;addiu s4,zero,0x17;addiu s4,zero,0x12;Move button text left for character customization menu
+--------;--------;--------;
+18F5C0;addiu a0,v1,0x1;addiu a0,v1,0x2;Increase speed at which messages are typed in dialogue box
+--------;--------;--------;
+19A56C;addiu v1,zero,0x47;addiu v1,zero,0x5A;Move Apply Customization text inside button
+--------;--------;--------;
+19A66C;addiu v1,zero,0x47;addiu v1,zero,0x5A;Move Revert Changes text inside button
+--------;--------;--------;
+1B1898;addiu v1,zero,0x1EC;addiu v1,zero,0x1FE;Move Reward UR string
+--------;--------;--------;
+1B5738;addiu a1,zero,0xEF;addiu a1,zero,0xE4;Change size of character bio box during opponent selection
+--------;--------;--------;
+1B5740;addiu a3,zero,0x9A;addiu a3,zero,0xAC;Change size of character bio box during opponent selection
+--------;--------;--------;
+1B5754;addiu t0,zero,0x80;addiu t0,zero,0x60;Change opacity for character bio box during opponent selection
+--------;--------;--------;
+1B9D1C;sll v0,s7,0x04;lw v1,0x34(a0);
+1B9D20;addu a0,a0,a1;addu a0,a0,a1;
+1B9D24;sra v1,v0,0x01;j 0x00211F50;Jump to the fix for names not being centered, inside name plates, on deciding order screen
+1B9D28;lw a0,0x0(a0);nop ;
+--------;--------;--------;
+1BB204;sll v0,s5,0x04;lw v1,0x34(a0);Jump to the fix for names not being centered, inside name plates, on result screen
+1BB208;addu a0,a0,a1;addu a0,a0,a1;
+1BB20C;sra v1,v0,0x01;j 0x00211ED0;
+1BB210;lw a0,0x0(a0);nop ;
+--------;--------;--------;
+1C2E58;addiu v1,zero,0x47;addiu v1,zero,0x86;Moves text inside confirm rules button
+--------;--------;--------;
+1DB204;addiu a0,zero,0x14;addiu a0,zero,0x12;Change memory card message font size
+--------;--------;--------;
+1DB210;addiu a0,zero,0x14;addiu a0,zero,0xC;Change memory card message font size
+--------;--------;--------;
+1DB218;addiu a1,zero,0x16;addiu a1,zero,0x12;Change memory card message font size
+--------;--------;--------;
+1DB5F4;addiu a0,zero,0x14;addiu a0,zero,0x12;Change memory card message font size
+--------;--------;--------;
+1DB600;addiu a0,zero,0x14;addiu a0,zero,0xC;Change memory card message font size
+--------;--------;--------;
+1DB608;addiu a1,zero,0x16;addiu a1,zero,0x12;Change memory card message font size
+--------;--------;--------;
+1DDB78;addiu v0,zero,0x1FC;addiu v0,zero,0x216;Move UR won string
+--------;--------;--------;
+1DFE54;addiu a1,zero,0xEF;addiu a1,zero,0xE4;Change size of character bio box during opponent selection
+--------;--------;--------;
+1DFE5C;addiu a3,zero,0x9A;addiu a3,zero,0xAC;Change size of character bio box during opponent selection
+--------;--------;--------;
+1DFE64;addiu t0,zero,0x80;addiu t0,zero,0x60;Change opacity for character bio box during opponent selection
+--------;--------;--------;
+1E0AC0;addiu a1,zero,0x16C;addiu a1,zero,0x164;Change y position of text box for background gallery
+--------;--------;--------;
+1E0AC8;addiu a3,zero,0x40;addiu a3,zero,0x52;Change y size of text box for background gallery
+--------;--------;--------;
+1E0CF4;addiu v1,zero,0x178;addiu v1,zero,0x172;Change y position of text for background gallery text box
+--------;--------;--------;
+1E137C;addiu v1,zero,0xF1;addiu v1,zero,0xE0;Change hat string positon on collection screen
+--------;--------;--------;
+1E13C4;addiu v1,zero,0xF1;addiu v1,zero,0xE0;Change hairstyle string positon on collection screen
+--------;--------;--------;
+1E140C;addiu v1,zero,0xF1;addiu v1,zero,0xE0;Change clothes string positon on collection screen
+--------;--------;--------;
+211ED0;nop ;lw a0,0x0(a0);Fix to center names inside name plates on result screen
+211ED4;nop ;mthi s5;Originally game just multiplies font size by number of letters
+211ED8;nop ;mtlo t8;Here I add each individual letters width until end of the word is reached
+211EDC;nop ;addu s5,s4,zero;
+211EE0;nop ;addu v0,zero,zero;
+211EE4;nop ;lb a1,0x0(s5);
+211EE8;nop ;beq a1,zero,0x00211F38;
+211EEC;nop ;nop ;
+211EF0;nop ;sltiu t8,a1,0x0080;
+211EF4;nop ;beq t8,zero,0x00211F28;
+211EF8;nop ;nop ;
+211EFC;nop ;lui t8,0x0021;
+211F00;nop ;addu t8,t8,a1;
+211F04;nop ;lb a1,0x21D0(t8);
+211F08;nop ;beq a1,zero,0x00211F18;
+211F0C;nop ;nop ;
+211F10;nop ;srlv a1,v1,a1;
+211F14;nop ;sll a1,a1,0x01;
+211F18;nop ;sub t8,v1,a1;
+211F1C;nop ;addu v0,v0,t8;
+211F20;nop ;beq zero,zero,0x00211EE4;
+211F24;nop ;addiu s5,s5,0x1;
+211F28;nop ;addu v0,v0,v1;
+211F2C;nop ;addu v0,v0,v1;
+211F30;nop ;beq zero,zero,0x00211EE4;
+211F34;nop ;addiu s5,s5,0x2;
+211F38;nop ;nop ;
+211F3C;nop ;mfhi s5;
+211F40;nop ;mflo t8;
+211F44;nop ;nop ;
+211F48;nop ;j 0x001BB210;
+211F4C;nop ;nop ;
+--------;--------;--------;
+211F50;nop ;lw a0,0x0(a0);Fix to center names inside name plates on deciding order
+211F54;nop ;mthi s7;Originally game just multiplies font size by number of letters
+211F58;nop ;mtlo t8;Here I add each individual letters width until end of the word is reached
+211F5C;nop ;addu s7,s6,zero;
+211F60;nop ;addu v0,zero,zero;
+211F64;nop ;lb a1,0x0(s7);
+211F68;nop ;beq a1,zero,0x00211FB8;
+211F6C;nop ;nop ;
+211F70;nop ;sltiu t8,a1,0x0080;
+211F74;nop ;beq t8,zero,0x00211FA8;
+211F78;nop ;nop ;
+211F7C;nop ;lui t8,0x0021;
+211F80;nop ;addu t8,t8,a1;
+211F84;nop ;lb a1,0x21D0(t8);
+211F88;nop ;beq a1,zero,0x00211F98;
+211F8C;nop ;nop ;
+211F90;nop ;srlv a1,v1,a1;
+211F94;nop ;sll a1,a1,0x01;
+211F98;nop ;sub t8,v1,a1;
+211F9C;nop ;addu v0,v0,t8;
+211FA0;nop ;beq zero,zero,0x00211F64;
+211FA4;nop ;addiu s7,s7,0x1;
+211FA8;nop ;addu v0,v0,v1;
+211FAC;nop ;addu v0,v0,v1;
+211FB0;nop ;beq zero,zero,0x00211F64;
+211FB4;nop ;addiu s7,s7,0x2;
+211FB8;nop ;nop ;
+211FBC;nop ;mfhi s7;
+211FC0;nop ;mflo t8;
+211FC4;nop ;nop ;
+211FC8;nop ;j 0x001B9D28;
+211FCC;nop ;nop ;
+--------;--------;--------;
+211FD0;nop ;mthi t0;Fix to take into account VWF for 2P, 3P name positions during gameplay
+211FD4;nop ;mtlo t1;Originally game just multiplies font size by number of letters
+211FD8;nop ;lui t0,0x0021;Here I add each individual letters width until end of the word is reached
+211FDC;nop ;lw v1,0x40C8(t0);
+211FE0;nop ;addu a0,a3,zero;
+211FE4;nop ;addu v0,zero,zero;
+211FE8;nop ;lb t1,0x0(a0);
+211FEC;nop ;beq t1,zero,0x00212038;
+211FF0;nop ;nop ;
+211FF4;nop ;sltiu a1,t1,0x0080;
+211FF8;nop ;beq a1,zero,0x00212028;
+211FFC;nop ;nop ;
+212000;nop ;addu t1,t0,t1;
+212004;nop ;lb a1,0x21D0(t1);
+212008;nop ;beq a1,zero,0x00212018;
+21200C;nop ;nop ;
+212010;nop ;srlv a1,v1,a1;
+212014;nop ;sll a1,a1,0x02;
+212018;nop ;sub t1,v1,a1;
+21201C;nop ;addu v0,v0,t1;
+212020;nop ;beq zero,zero,0x00211FE8;
+212024;nop ;addiu a0,a0,0x1;
+212028;nop ;addu v0,v0,v1;
+21202C;nop ;addu v0,v0,v1;
+212030;nop ;beq zero,zero,0x00211FE8;
+212034;nop ;addiu a0,a0,0x2;
+212038;nop ;nop ;
+21203C;nop ;mfhi t0;
+212040;nop ;mflo t1;
+212044;nop ;addiu a0,zero,0x1;Check if 2P or 3P
+212048;nop ;beq s1,a0,0x0021205C;
+21204C;nop ;nop ;
+212050;nop ;addiu a0,zero,0x2;
+212054;nop ;beq s1,a0,0x00212068;
+212058;nop ;nop ;
+21205C;nop ;nop ;
+212060;nop ;j 0x001713FC;
+212064;nop ;nop ;
+212068;nop ;nop ;
+21206C;nop ;j 0x00171438;
+212070;nop ;nop ;
+212074;nop ;nop ;
+--------;--------;--------;
+212080;nop ;lui s5,0x0021;Fix for dialogue box character limit
+212084;nop ;lw s5,0x20AC(s5);
+212088;nop ;bne s3,s5,0x0021209C;Check if dialogue box
+21208C;nop ;nop ;
+212090;nop ;lw s5,0x24(s3);
+212094;nop ;sll s5,s5,0x02;4 times the size
+212098;nop ;sw s5,0x24(s3);
+21209C;nop ;mfhi s5;
+2120A0;nop ;j 0x001491F4;
+2120A4;nop ;nop ;
+2120A8;nop ;nop ;
+--------;--------;--------;
+2120C0;nop ;lui v0,0x0021;VWF function
+2120C4;nop ;lw a1,0x20B8(v0);Check if s0 register contains adress with letter position
+2120C8;nop ;sltu a1,a1,s0;
+2120CC;nop ;beq a1,zero,0x00212138;
+2120D0;nop ;nop ;
+2120D4;nop ;lw a1,0x20BC(v0);
+2120D8;nop ;sltu a1,s0,a1;
+2120DC;nop ;beq a1,zero,0x00212138;
+2120E0;nop ;nop ;
+2120E4;nop ;sltiu a1,a0,0x0080;Check if ASCII
+2120E8;nop ;beq a1,zero,0x00212170;
+2120EC;nop ;lw v1,0x20(a3);
+2120F0;nop ;nop ;
+2120F4;nop ;addu v0,v0,a0;
+2120F8;nop ;lb a1,0x2170(v0);Load byte from address to see if letter needs moving
+2120FC;nop ;beq a1,zero,0x00212118;
+212100;nop ;nop ;
+212104;nop ;srlv a1,v1,a1;Change letter on screen position
+212108;nop ;lw a2,0x4(s0);
+21210C;nop ;sub a2,a2,a1;
+212110;nop ;sw a2,0x4(s0);
+212114;nop ;nop ;
+212118;nop ;lb a1,0x21D0(v0);Load byte from address to see if letter needs width change
+21211C;nop ;beq a1,zero,0x00212170;
+212120;nop ;nop ;
+212124;nop ;srlv a1,v1,a1;Change letter width
+212128;nop ;sll a1,a1,0x02;
+21212C;nop ;sub v1,v1,a1;
+212130;nop ;beq zero,zero,0x00212170;
+212134;nop ;nop ;
+212138;nop ;sltiu a2,a0,0x0080;Check if ASCII
+21213C;nop ;beq a2,zero,0x00212170;
+212140;nop ;lw v1,0x20(a3);
+212144;nop ;nop ;
+212148;nop ;addu v0,v0,a0;
+21214C;nop ;lb a1,0x21D0(v0);Load byte from address to see if letter needs width change
+212150;nop ;beq a1,zero,0x00212170;
+212154;nop ;nop ;
+212158;nop ;srlv a1,v1,a1;Change letter width
+21215C;nop ;sll a1,a1,0x02;
+212160;nop ;sub v1,v1,a1;
+212164;nop ;beq zero,zero,0x00212170;
+212168;nop ;nop ;
+21216C;nop ;nop ;
+212170;nop ;lui v0,0x002C;
+212174;nop ;lw a2,-0x6AA0(v0);
+212178;nop ;addiu a1,zero,0x2;
+21217C;nop ;j z_un_00147ac0;
+212180;nop ;nop ;
+212184;nop ;nop ;
