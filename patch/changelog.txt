@@ -1,0 +1,5 @@
+ver. 1.1
+- fixed PlayStation 2 logo on startup thanks to MKPSXISO
+- fixed choice highlight going outside of the box for "Continue previous game"
+- fixed "Global *Number* Standing" on character select screen. Now is "Global Standing: *Number*"
+- renamed "Hornet Member" to "Desert Hornet" to be in line with "Killer Elephant" and "Bloody Mantis"
