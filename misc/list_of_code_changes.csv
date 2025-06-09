@@ -266,3 +266,35 @@ memory_addres;original_instruction;new_instruction;comment
 21217C;nop ;j z_un_00147ac0;
 212180;nop ;nop ;
 212184;nop ;nop ;
+--------;--------;--------;1.1
+0018DBE0;addiu a0,a3,0x18;addiu a0,a3,0x12;
+0018DBF4;addiu a2,v0,0x52;addiu a2,v0,0x20;
+0018DC08;addiu v1,v1,0x38;addiu v1,v1,0x20;
+--------;--------;--------;
+001DFFD4;lui a1,0x0029;jal z_un_001970c0;
+001DFFD8;addiu a2,s7,0x1;addiu a0,zero,0x1F;
+001DFFDC;addiu a0,sp,0x2E0;daddu a1,v0,zero;
+001DFFE0;jal z_un_0010ac50;jal z_un_0010aec8;
+001DFFE4;addiu a1,a1,0x31A8;addiu a0,sp,0x320;
+001DFFE8;addiu a0,sp,0x320;lui a1,0x0029;
+001DFFEC;jal z_un_0010aec8;addiu a2,s7,0x1;
+001DFFF0;addiu a1,sp,0x2E0;addiu a0,sp,0x2E0;
+001DFFF4;jal z_un_001970c0;jal z_un_0010ac50;
+001DFFF8;addiu a0,zero,0x1F;addiu a1,a1,0x31A8;
+001DFFFC;daddu a1,v0,zero;addiu a0,sp,0x320;
+001E0000;jal z_un_0010aec8;jal z_un_0010aec8;
+001E0004;addiu a0,sp,0x320;addiu a1,sp,0x2E0;
+--------;--------;--------;
+001B5888;lui a1,0x0029;jal z_un_001970c0
+001B588C;addiu a2,s7,0x1;addiu a0,zero,0x1F
+001B5890;addiu a0,sp,0x2E0;daddu a1,v0,zero
+001B5894;jal z_un_0010ac50;jal z_un_0010aec8
+001B5898;addiu a1,a1,0x2210;addiu a0,sp,0x320
+001B589C;addiu a0,sp,0x320;lui a1,0x0029
+001B58A0;jal z_un_0010aec8;addiu a2,s7,0x1
+001B58A4;addiu a1,sp,0x2E0;addiu a0,sp,0x2E0
+001B58A8;jal z_un_001970c0;jal z_un_0010ac50
+001B58AC;addiu a0,zero,0x1F;addiu a1,a1,0x2210
+001B58B0;daddu a1,v0,zero;addiu a0,sp,0x320
+001B58B4;jal z_un_0010aec8;jal z_un_0010aec8
+001B58B8;addiu a0,sp,0x320;addiu a1,sp,0x2E0
